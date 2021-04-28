@@ -1,0 +1,123 @@
+.gallery-button {
+    text-align: center;
+    margin: 5px;
+}
+
+.button {
+    margin: 10px ;
+    padding: 5px 15px 5px 15px; 
+    border-radius: 10px;
+    background: radial-gradient(circle, rgb(231, 227, 227) 0%, rgb(150, 122, 122) 50%, rgb(88, 65, 65) 100%);
+    color: rgb(14, 10, 10);
+    font-weight: bold;
+}
+
+.button:hover{
+    background: radial-gradient(circle, rgb(88, 65, 65) 0%, rgb(10, 10, 10) 50%, rgb(172, 243, 8)   100%);
+    color: white;
+}
+
+.gallery-container {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    background-color: rgb(204, 196, 196);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.gallery-wrapper {
+    margin: 5px;
+    padding: 5px;
+    width: 99%;
+    height: auto;
+    text-align: center;
+
+}
+
+.gallery-row{
+    margin: 0 -5px 0 -5px;
+}
+
+.gallery-row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.gallery-col {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(51, 49, 49, 0.2);
+    padding: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+    transition: transform .1s;
+}
+
+.gallery-a-effect {
+    margin: 0px 0px 13px 0px;
+}
+
+
+.card:hover {
+    -ms-transform: scale(1.09); /* IE 9 */
+    -webkit-transform: scale(1.09); /* Safari 3-8 */
+    transform: scale(1.09); 
+}
+
+strong{
+    color: rgb(131, 12, 179);
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery-col {
+        width: 32%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(214, 36, 36, 0.2);
+        padding: 16px;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .gallery-col {
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(216, 42, 42, 0.2);
+        padding: 16px;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .gallery-col {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(202, 47, 47, 0.2);
+        padding: 16px;
+        text-align: center;
+    }
+
+}
